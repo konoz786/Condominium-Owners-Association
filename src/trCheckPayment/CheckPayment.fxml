@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prCheckPayment.CheckPaymentController">
+   <children>
+      <TextField fx:id="nameTextFeild" layoutX="43.0" layoutY="65.0" promptText="Unit Owners Name" />
+      <TextField fx:id="amountduelistTextFeild" layoutX="43.0" layoutY="139.0" promptText="Amount Duelist" />
+      <DatePicker fx:id="joiningDatePicker" layoutX="43.0" layoutY="101.0" promptText="Date of Payment" />
+      <TableView fx:id="paymentTableView" layoutY="202.0" prefHeight="198.0" prefWidth="600.0">
+        <columns>
+            <TableColumn prefWidth="117.59997862577438" text="Unit Owners ID" />
+          <TableColumn fx:id="nameColumn" prefWidth="141.6000213623047" text="Unit Owners Name" />
+          <TableColumn fx:id="paymentColumn" prefWidth="141.60003662109375" text="Last Date of Payment" />
+            <TableColumn fx:id="ownerColumn" prefWidth="192.0" text="Amount Duelist" />
+        </columns>
+      </TableView>
+      <Button layoutX="233.0" layoutY="88.0" mnemonicParsing="false" onAction="#saveButtonOnClick" prefHeight="26.0" prefWidth="106.0" text="Save all Data " />
+      <Label layoutX="205.0" prefHeight="34.0" prefWidth="208.0" text="Check Payment Status">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="25.0" prefHeight="18.0" prefWidth="106.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="349.0" layoutY="38.0" prefHeight="54.0" prefWidth="252.0" text="Send Check Payment Status to Condo Lawyer" />
+      <Button layoutX="425.0" layoutY="102.0" mnemonicParsing="false" onAction="#yesButtonOnClick" text="Yes" />
+      <Button layoutX="475.0" layoutY="101.0" mnemonicParsing="false" onAction="#noButtonOnClick" text="No" />
+      <TextField fx:id="idTextFeild1" layoutX="42.0" layoutY="25.0" promptText="Payment Name" />
+   </children>
+</AnchorPane>

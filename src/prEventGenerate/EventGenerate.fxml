@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prCreateEventScene.CreateeventSceneController">
+   <children>
+      <DatePicker fx:id="eventDatePicker" layoutX="24.0" layoutY="80.0" promptText="Event Date" />
+      <TextField fx:id="eventnameTextField" layoutX="24.0" layoutY="46.0" promptText="Event Name" />
+      <TextField fx:id="addressTextField" layoutX="225.0" layoutY="80.0" promptText="Event Adress" />
+      <TextField fx:id="eventInvitationTextField" layoutX="225.0" layoutY="46.0" promptText="Event Total Invitation " />
+      <TableView fx:id="managementTableView" layoutX="-1.0" layoutY="134.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="EventNameColumn" prefWidth="173.60004270076752" text="Event Name" />
+          <TableColumn fx:id="EventDateColumn" prefWidth="116.0" text="Event Date" />
+            <TableColumn fx:id="EventInvitationColoum" prefWidth="148.800048828125" text="Event Invitaiton" />
+            <TableColumn fx:id="EventBookingAddressColoumn" prefWidth="162.39993286132812" text="Event Booking Adress" />
+        </columns>
+      </TableView>
+      <Button layoutX="410.0" layoutY="79.0" mnemonicParsing="false" onAction="#saveEventDataButtonOnClick" prefHeight="26.0" prefWidth="117.0" text="Save Event Data" />
+      <Label layoutX="24.0" layoutY="106.0" prefHeight="18.0" prefWidth="150.0" text="Added Event:" />
+      <Button layoutX="410.0" layoutY="45.0" mnemonicParsing="false" onAction="#sendButtonOnClick" prefHeight="26.0" prefWidth="56.0" text="Send " />
+      <Label layoutX="225.0" layoutY="-10.0" prefHeight="48.0" prefWidth="167.0" text="Event  Generate">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="469.0" layoutY="45.0" mnemonicParsing="false" onAction="#backButtonOnClick" prefHeight="26.0" prefWidth="56.0" text="Back" />
+   </children>
+</AnchorPane>

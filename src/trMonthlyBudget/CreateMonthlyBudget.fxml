@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trMonthlyBudget.CreateMonthlyBudgetController">
+   <children>
+      <TextField fx:id="previousMonthTextField" layoutX="234.0" layoutY="42.0" promptText="Previous Month Budget" />
+      <TextField fx:id="budgetPurposeTextField" layoutX="234.0" layoutY="93.0" promptText="Budget Purpose" />
+      <TextField fx:id="BudgetTextFeild" layoutX="57.0" layoutY="93.0" promptText="New Budget" />
+      <DatePicker fx:id="budgetdateDatePicker" layoutX="57.0" layoutY="136.0" promptText="New Budget Create Date" />
+      <TableView fx:id="monthlyBudgetTableView" layoutX="4.0" layoutY="207.0" prefHeight="194.0" prefWidth="589.0">
+        <columns>
+            <TableColumn fx:id="budgetIDColumn" prefWidth="111.20001220703125" text="Budget ID" />
+          <TableColumn fx:id="previousMonthColumn" prefWidth="131.20001220703125" text="Previous Month Budget" />
+            <TableColumn fx:id="newBudgetColumn" prefWidth="111.99993896484375" text="New Budget" />
+            <TableColumn fx:id="purposeColumn" prefWidth="128.79998779296875" text="Budget Purpose" />
+          <TableColumn fx:id="budgetColumn" prefWidth="109.5999755859375" text="New Budget Create Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="250.0" layoutY="136.0" mnemonicParsing="false" onAction="#saveButtonOnClick" text="Save All Data" />
+      <Label layoutX="186.0" layoutY="-2.0" prefHeight="33.0" prefWidth="214.0" text="Create Monthly Budget">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="idTextFeild" layoutX="58.0" layoutY="42.0" promptText="Budget ID" />
+   </children>
+</AnchorPane>
